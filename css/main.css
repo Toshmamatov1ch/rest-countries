@@ -1,0 +1,265 @@
+/* nunito-sans-regular - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/nunito-sans-v19-latin-regular.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-500 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/nunito-sans-v19-latin-500.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-600 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/nunito-sans-v19-latin-600.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-700 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/nunito-sans-v19-latin-700.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+/* nunito-sans-800 - latin */
+@font-face {
+  font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
+  font-family: "Nunito Sans";
+  font-style: normal;
+  font-weight: 800;
+  src: url("../fonts/nunito-sans-v19-latin-800.woff2") format("woff2"); /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
+}
+
+:root {
+  --primary-text-color: rgba(17, 21, 23, 1);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+button {
+  border: none;
+}
+
+input {
+  outline: none;
+}
+
+ul,
+ol {
+  list-style: none;
+}
+
+body {
+  font-family: "Nunito Sans";
+  background-color: rgba(255, 255, 255, 0);
+}
+
+.container {
+  width: 100%;
+  max-width: 1320px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* navbar stlye */
+
+nav {
+  position: fixed;
+  width: 100%;
+  box-shadow: 0px 2px 4px 0px rgba(0, 0, 0, 0.06);
+  background: rgba(255, 255, 255, 1);
+  padding: 29px 0;
+}
+
+.nav-contaniner {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.nav-title {
+  color: var(--primary-text-color);
+  font-size: 24px;
+  font-weight: 800;
+  line-height: 33px;
+}
+
+.dark {
+  display: flex;
+  align-items: center;
+  gap: 10.5px;
+
+  img {
+    width: 20px;
+    height: 20px;
+  }
+
+  a {
+    color: var(--primary-text-color);
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 22px;
+  }
+}
+
+a:hover {
+  color: blue;
+}
+
+/* for secction style */
+
+.search-content {
+  padding-top: 168px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 48px;
+}
+.search {
+  width: 480px;
+  padding: 18px 32px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 1);
+
+  display: flex;
+  align-items: center;
+  gap: 24px;
+
+  input {
+    border: none;
+    flex-grow: 1;
+  }
+}
+
+.select {
+  width: 200px;
+  padding: 18px 24px;
+  border-radius: 5px;
+  box-shadow: 0px 2px 9px 5px rgba(0, 0, 0, 0.05);
+  background: rgba(255, 255, 255, 1);
+
+  select {
+    width: 100%;
+    border: none;
+  }
+}
+
+/* card section style */
+
+.country-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 75px;
+}
+
+.card {
+  width: 264px;
+  height: 360px;
+  border-radius: 5px;
+  box-shadow: 0px 0px 7px 10px rgba(0, 0, 0, 0.03);
+  background: rgba(255, 255, 255, 1);
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
+}
+
+.card:hover {
+  transform: translateY(10px);
+  box-shadow: 0 10px 20px rgba(4, 201, 158, 0.2);
+}
+
+.card-content {
+  padding: 24px 24px;
+  h2 {
+    color: var(--primary-text-color);
+    font-size: 18px;
+    font-weight: 800;
+    line-height: 26px;
+    margin-bottom: 16px;
+  }
+
+  p {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 800;
+    line-height: 25px;
+    margin-bottom: 8px;
+  }
+
+  span {
+    color: var(--primary-text-color);
+    font-size: 14px;
+    font-weight: 300;
+    line-height: 16px;
+  }
+}
+
+.link {
+  a {
+    color: blue;
+    font-size: 14px;
+  }
+}
+
+.country-second {
+  padding-top: 75px;
+  padding-bottom: 45px;
+}
+
+@media screen and (max-width: 1024px) {
+  .country-container {
+    flex-wrap: wrap;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .container {
+    padding: 0 16px;
+  }
+
+  .nav-contaniner {
+    gap: 20px;
+  }
+
+  .nav-title {
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  .dark {
+    a {
+      font-size: 12px;
+      line-height: 16px;
+    }
+  }
+
+  .search-content {
+    padding-top: 148px;
+    flex-wrap: wrap;
+    gap: 40px;
+  }
+
+  .country-container {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
